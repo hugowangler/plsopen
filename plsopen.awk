@@ -8,7 +8,6 @@ $1 == "scp" {
     # skip all the flags at start (e.g. -r)
     if ($i !~ /^\-/) {
       file = i
-      print "ok", $i
       break
     }
   }
