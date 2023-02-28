@@ -18,6 +18,6 @@ $1 == "scp" {
     sub(/\/$/, "", $dest)
   }
   path = $(i+1)"/"$file
-  system("xdg-open " path)
+  cmd = system("open " path " 2>/dev/null")
 }
 
